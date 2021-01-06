@@ -26,4 +26,8 @@ public class ProductService {
 					.map(p -> new ProductDTO(p))
 					.collect(Collectors.toList());
 	}
+	
+	public Product getOne(Long id) {
+		return repository.getOne(id);
+	}
 }
